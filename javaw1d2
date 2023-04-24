@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int n = sc.nextInt();
+        boolean flag = false;
+        for (int i = x; i <= y; i++) {
+            if (i % n == 0) {
+                System.out.print(i + " ");
+                flag = true;
+            }
+        }
+        if (!flag) {
+            System.out.print("NO OUTPUT");
+        }
+    }
+}
